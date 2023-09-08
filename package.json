@@ -1,0 +1,18 @@
+{
+  "name": "curso-typescript",
+  "version": "1.0.0",
+  "description": "typescript course sapiencia",
+  "main": "app.js",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "start-two": "ts-node app2.ts",
+    "hola": "ts-node app3.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {}
+}
