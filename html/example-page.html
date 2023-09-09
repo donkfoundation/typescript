@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Example Page</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/919/919827.png">
+    <link rel="stylesheet" href="./example-page.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a page that shows the example of a HTML 5 page." />
+    <meta name="keywords" content="HTML, JavaScript">
+    <meta name="author" content="SAO">
+</head>
+
+<body>
+    <script> 
+        function testFunction() { 
+            if(!document.getElementById("test").innerHTML) {
+                document.getElementById("test").innerHTML = "Please display this content!";
+            } else {
+                document.getElementById("test").innerHTML = "";
+            }            
+        } 
+     </script>
+
+    <header>
+        <h1>HTML 5 Practice Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://html.com/" target="_blank">Home</a></li>
+            <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">About</a></li>
+            <li><a href="https://infocenter.kratylo.online/" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <hgroup>
+            <h2>This is the first title of our first sectionless article</h2>
+            <h2>This is the second title of our first sectionless article</h2>
+        </hgroup>
+        <p>
+            The content of this article reflects some of the things you can do with HTML 5 
+            for example, we can add an anchor to push us to the top of the document <a href="#top">to the top</a>.<br>
+            We can also do things such as write in <strong>bold</strong>, write something on <em>emphasis</em>, and of course <u>underline any comments</u>.<br>
+            We may go as fat as to add some sort of <del>deleted text like so</del>, o might as well create <ins>inserted text</ins>.<br>
+            Now guys, check this <mark>out it is important</mark>.<br>
+            <hr>
+            BTW, this is another section, just saying
+                <blockquote>
+                    “To learn HTML or not to learn HTML, that is the question”
+                    <footer><cite>- SAO</cite></footer>
+                </blockquote>
+            <hr><br>
+            <hr>
+                <h4>Let's add some code snippets</h4>
+                <pre>
+                    <code>
+                        // Yey javascript
+                        const codeSnippet = () => 'This is a code snippet'; 
+                    </code>
+                </pre>
+            </hr>
+        </p>
+
+        <h3>Let's check some Unordered lists</h3>
+        <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>They use the circle list style
+                <ul>
+                    <li>Nested list item one</li>
+                    <li>Nested list item two</li>
+                </ul>
+            </li>
+            <li>Just one more list item</li>
+        </ul>
+        <h3>Then again we have some ordered with some nesting</h3>
+        <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>They use the decimal list style
+                <ul>
+                    <li>Nested list item one</li>
+                    <li>Nested list item two</li>
+                </ul>
+            </li>
+            <li>Last list item</li>
+        </ol>
+    </article>
+
+    <aside>
+        <h3>Let's take a look at some games</h3>
+        <a href="https://www.nintendo.com/es-co/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank">
+            <figure>
+                <img 
+                    src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_TheLegendOfZeldaBreathOfTheWild.jpg" width="360"
+                    height="120" alt="Description of the first image" />
+                <figcaption>Breath of the wild</figcaption>
+            </figure>
+        </a>
+
+        <a href="https://www.nintendo.com/es-co/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank">
+            <figure>
+                <img 
+                    src="https://media.es.wired.com/photos/64629c28a566376ee967bbcd/16:9/w_2560%2Cc_limit/Zelda.png" width="360" height="80"
+                    alt="Description of the second image" />
+                <figcaption>Tears of the kingdom</figcaption>
+            </figure>
+        </a>
+
+        <img alt="Description of a single image without a caption" src="https://images5.alphacoders.com/764/764519.jpg"  width="500" height="250"/>
+
+        <p>
+            <button onclick="testFunction()">click me</button><br>
+            <pr id="test"></pr>
+        </p>
+
+        <details>
+            <summary>SAO capabilities</summary>
+            <p>List:</p>
+            <ul>
+                <li>Node js</li>
+                <li>Python</li>
+                <li>Golang</li>
+                <li>Deno</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Rest api</li>
+                <li>Graphql</li>
+            </ul>
+        </details>
+
+        <p>We have our regular class at <time>7:00</time> pm to <time>9:00</time> pm.</p>  
+    </aside>
+
+    <section class="section_example">
+        <h2 id="title_example">Let's take a look at divs and sections</h2>
+        <div class="some-class">
+            This is a div which is contained within a section, not quite good looking at the moment, but hey, better than nothing, I think
+        </div>
+
+        <h3>This is a table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cheese fondue</td>
+                    <td>1</td>
+                    <td>EUR 23</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>10</td>
+                    <td>EUR 10.000,00</td>
+                </tr>
+                <tr>
+                    <td>Waffles</td>
+                    <td>1</td>
+                    <td>EUR 14,30</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>This is a dynamically generated table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Typed</th>
+                    <th>Object oriented</th>
+                </tr>
+            </thead>
+            <tbody id="tableToFill"></tbody>
+        </table>
+
+        <script>
+            const languages = [{
+                    language: 'Javascript',
+                    typed: 'no',
+                    objectOriented: 'no'
+                },
+                {
+                    language: 'Java',
+                    typed: 'yes',
+                    objectOriented: 'yes'
+                },
+                {
+                    language: 'Typescript',
+                    typed: 'yes',
+                    objectOriented: 'kind of'
+                }]
+
+            const table = document.getElementById("tableToFill");
+
+            console.info(table)
+
+            languages.map(course=>{
+                let row = table.insertRow();
+                let name = row.insertCell(0);
+                name.innerHTML = course.language;
+                let date = row.insertCell(1);
+                date.innerHTML = course.typed;
+                let code = row.insertCell(2);
+                code.innerHTML = course.objectOriented;
+            });   
+
+            function fillData() {
+                if(!document.getElementById('exampleConfirmation').checked) {
+                    document.getElementById('message').innerHTML = 'Please check the checkbox first'
+                } else {
+                    document.getElementById('message').innerHTML = `Subject: ${document.getElementById('exampleSubject').value}, message: ${document.getElementById('exampleMessage').value}`
+                }
+            }
+        </script>
+
+        <h3>And this is a form</h3>
+        <form>
+            <div class="row">
+                <label for="exampleSubject">Subject</label>
+                <input type="text" placeholder="Your subject" id="exampleSubject">
+            </div>
+            <div class="row">
+                <label for="exampleMessage">Message</label>
+                <textarea placeholder="Your message" id="exampleMessage"></textarea>
+            </div>
+            <div class="row">
+                <label>
+                    <input type="checkbox" id="exampleConfirmation"><span>Confirmation</span>
+                </label>
+            </div>
+            <input type="submit" value="Submit" onclick="fillData()">
+        </form>
+        <pr id="message"></pr>
+    </section>
+
+    <br>
+    <footer>
+        This is a footer, it serves as a footer, has no other purpose
+    </footer>
+</body>
+
+</html>
