@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Helvetica", Sans-Serif; /* Añade una lista de fuentes de texto */
+    background-image: url("https://img.freepik.com/fotos-premium/fondo-diseno-abstracto-blanco-lineas-onduladas-suaves_476363-6179.jpg"); /* url("https://media.tenor.com/0dWgEgHxZTgAAAAC/legacy-of-kain-raziel.gif"); /* Agrega imagenes de fondo sea por referencia local o url */
+    background-repeat: no-repeat; /* define como se repetira una imagen de fondo */
+    /*
+    background-repeat: repeat-x;
+    background-repeat: repeat;
+    background-repeat: space;
+    background-repeat: round;
+    background-repeat: space repeat;
+    */
+    background-attachment: fixed; /* Define si una imagen de fondo esta fija o se mueve con su respectivo bloque */
+    /*
+    background-attachment: scroll;
+    background-attachment: local;
+    background-attachment: local, scroll;
+    background-attachment: scroll, local;
+    */
+    background-size: 100% 100%; /* Especifica el tamaño que tendra la imagen de fondo */
+}
+
+table, th, td {
+    border: 1px solid;
+    border-color: red;
+    background-color: white;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: transparent;
+}
+
+.section_example {
+    border: red 1px dotted;
+}
+
+.section_example #title_example {
+    position: relative; /* unica el elemento relativo a su posicion normal */
+    top: -0.5em;
+    margin-left: 1em;
+    display: inline; /* Indica que el elemento se posicionara en la misma linea */
+    background-color: red;
+    border:orange; 
+    border-width:5px; 
+    border-style:dotted;
+}
