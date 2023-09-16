@@ -59,7 +59,7 @@ const pet1: PetInfo = {
 }
 
 
-console.log(pet1.vaccines);
+console.log(pet1);
 
 if (pet1.vaccines instanceof Array) {
     console.log("es un arreglo!");
